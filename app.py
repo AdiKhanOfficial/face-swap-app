@@ -122,7 +122,7 @@ def video_faceswap_app():
 
 def main():
     app_selection = st.sidebar.radio("Select App", ("Image Face Swapping App", "Video Face Swapping App"))
-    elif app_selection == "Image Face Swapping App":
+    if app_selection == "Image Face Swapping App":
         image_faceswap_app()
     elif app_selection == "Video Face Swapping App":
         video_faceswap_app()
