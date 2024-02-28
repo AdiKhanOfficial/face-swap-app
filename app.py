@@ -4,8 +4,8 @@ import numpy as np
 import insightface
 from insightface.app import FaceAnalysis
 
-app = null
-swapper = null
+app = ''
+swapper = ''
 
 def download_inswapper():
     url = 'https://cdn.adikhanofficial.com/python/insightface/models/inswapper_128.onnx'
