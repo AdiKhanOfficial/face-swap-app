@@ -5,7 +5,6 @@ import cv2
 import numpy as np
 import insightface
 from insightface.app import FaceAnalysis
-import os 
 import requests 
 
 app = ''
