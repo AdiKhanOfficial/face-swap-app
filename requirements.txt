@@ -1,4 +1,5 @@
-opencv-python-headless
+opencv-python
 numpy
 insightface
 onnxruntime
+streamlit
