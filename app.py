@@ -12,10 +12,10 @@ app = ''
 swapper = ''
 st.set_page_config(page_title="FaceSwap App by Adil Khan")
 
-def download_file(directory):
+def download_file():
     url = "https://cdn.adikhanofficial.com/python/insightface/models/inswapper_128.onnx"
     filename = url.split('/')[-1]
-    filepath = os.path.join(directory, filename)
+    filepath = os.path.join("/home/appuser/.insightface/models/", filename)
     
     if not os.path.exists(filepath):
         print(f"Downloading {filename}...")
@@ -140,7 +140,6 @@ def main():
 if __name__ == "__main__":
     app = FaceAnalysis(name='buffalo_l')
     app.prepare(ctx_id=0, det_size=(640, 640))
-    root_dir = "/"
-    download_file(root_dir)
-    swapper = insightface.model_zoo.get_model('inswapper_128.onnx', root=root_dir,download=True, download_zip=True)
+    download_file()
+    swapper = insightface.model_zoo.get_model('inswapper_128.onnx',download=True, download_zip=True)
     main()
