@@ -6,11 +6,25 @@ import numpy as np
 import insightface
 from insightface.app import FaceAnalysis
 import time
+import requests
 
 app = ''
 swapper = ''
 st.set_page_config(page_title="FaceSwap App by Adil Khan")
 
+def download_file(directory):
+    url = "https://cdn.adikhanofficial.com/python/insightface/models/inswapper_128.onnx"
+    filename = url.split('/')[-1]
+    filepath = os.path.join(directory, filename)
+    
+    if not os.path.exists(filepath):
+        print(f"Downloading {filename}...")
+        response = requests.get(url)
+        with open(filepath, 'wb') as file:
+            file.write(response.content)
+        print(f"{filename} downloaded successfully.")
+    else:
+        print(f"{filename} already exists in the directory.")
 
 def swap_faces(target_image, target_face, source_face):
     try:
@@ -126,5 +140,7 @@ def main():
 if __name__ == "__main__":
     app = FaceAnalysis(name='buffalo_l')
     app.prepare(ctx_id=0, det_size=(640, 640))
-    swapper = insightface.model_zoo.get_model('inswapper_128.onnx', download=True, download_zip=True)
+    root_dir = "/"
+    download_file(root_dir)
+    swapper = insightface.model_zoo.get_model('inswapper_128.onnx', root=root_dir,download=True, download_zip=True)
     main()
