@@ -27,3 +27,6 @@ InsightFace
 
 **Usage:**
 Open the app, upload your source and target images or videos, and let the magic happen! Swapped images and videos can be downloaded directly from the app once processing is complete.
+
+**Results**
+<img src='https://raw.githubusercontent.com/AdiKhanOfficial/face_swapping/refs/heads/main/Result.jpg' style='width:100%'/>
