@@ -17,7 +17,7 @@ git clone https://github.com/adikhanofficial/face_swapping.git
 pip install -r requirements.txt
 
 3. Run the app:
-streamlit run app.py
+streamlit run app.py OR Just Run run.py
 
 **Requirements:**
 Python 3.x
