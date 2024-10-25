@@ -1,5 +1,6 @@
 opencv-python
 numpy
 insightface
+onnx
 onnxruntime
 streamlit
