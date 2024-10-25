@@ -15,7 +15,7 @@ st.set_page_config(page_title="FaceSwap App by Adil Khan")
 def download_model():
     url = "https://cdn.adikhanofficial.com/python/insightface/models/inswapper_128.onnx"
     filename = url.split('/')[-1]
-    filepath = os.path.join(os.path.dirname(__file__), "models",filename)
+    filepath = os.path.join(os.path.dirname(__file__),filename)
     
     if not os.path.exists(filepath):
         print(f"Downloading {filename}...")
