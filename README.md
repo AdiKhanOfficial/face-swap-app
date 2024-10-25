@@ -20,10 +20,14 @@ pip install -r requirements.txt
 streamlit run app.py OR Just Run run.py
 
 **Requirements:**
-Python 3.x
+Python 3.9
 Streamlit
 OpenCV
 InsightFace
+
+**Download Links**
+Python 3.9: https://www.python.org/downloads/release/python-390/
+InSwapper Model: https://cdn.adikhanofficial.com/python/insightface/models/inswapper_128.onnx
 
 **Usage:**
 Open the app, upload your source and target images or videos, and let the magic happen! Swapped images and videos can be downloaded directly from the app once processing is complete.
