@@ -14,11 +14,5 @@
   ],
   "env": {
     "PYTHON_VERSION": "3.9"
-  },
-  "python": {
-    "includeFiles": [
-      "insightface",
-      "models/*"
-    ]
   }
 }
