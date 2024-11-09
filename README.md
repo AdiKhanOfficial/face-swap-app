@@ -2,13 +2,14 @@
 This repository contains a Face Swapping application built with Streamlit and OpenCV, utilizing InsightFace for facial recognition and swapping. This app allows you to perform face swaps on both images and videos with minimal hassle.
 
 **Features:**
-Image Face Swap: Upload a source face image and a target image, and seamlessly swap faces between the two.
 
-Video Face Swap: Upload a source face image and a target video, and apply the face swap across all frames in the video.
+**Image Face Swap:** Upload a source face image and a target image, and seamlessly swap faces between the two.
 
-InsightFace Integration: Uses InsightFace's deep learning models to detect and swap faces with high precision.
+**Video Face Swap:** Upload a source face image and a target video, and apply the face swap across all frames in the video.
 
-Streamlit Interface: User-friendly web interface for easy interaction.
+**InsightFace Integration:** Uses InsightFace's deep learning models to detect and swap faces with high precision.
+
+**Streamlit Interface:** User-friendly web interface for easy interaction.
 
 **How It Works:**
 Image Swapping: Detects faces in both source and target images, then replaces the target face with the source face using inswapper_128.onnx.
