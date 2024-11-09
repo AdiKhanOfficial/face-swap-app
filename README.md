@@ -32,6 +32,7 @@ OpenCV
 InsightFace
 
 **Download Links**
+
 Python 3.9: https://www.python.org/downloads/release/python-390/ <br>
 InSwapper Model: https://cdn.adikhanofficial.com/python/insightface/models/inswapper_128.onnx
 
