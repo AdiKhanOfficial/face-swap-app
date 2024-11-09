@@ -14,6 +14,7 @@ This repository contains a Face Swapping application built with Streamlit and Op
 **How It Works:**
 Image Swapping: Detects faces in both source and target images, then replaces the target face with the source face using inswapper_128.onnx.
 Video Swapping: Swaps the face in each frame of the video by detecting faces in the target video and applying the face swap to match the source face.
+
 **Installation:**
 1. Clone the repository:
 git clone https://github.com/adikhanofficial/face_swapping.git
