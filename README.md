@@ -1,43 +1,102 @@
-**Face Swapping App by Adil Khan**
-This repository contains a Face Swapping application built with Streamlit and OpenCV, utilizing InsightFace for facial recognition and swapping. This app allows you to perform face swaps on both images and videos with minimal hassle.
 
-**Features:**
+# Face Swapping App by Adil Khan
 
-**Image Face Swap:** Upload a source face image and a target image, and seamlessly swap faces between the two.
+Welcome to the **Face Swapping App** repository! This application leverages **Streamlit** and **OpenCV**, powered by **InsightFace**, to perform seamless face swapping on images and videos. Whether you want to swap faces in pictures or videos, this app provides a simple and efficient solution.
 
-**Video Face Swap:** Upload a source face image and a target video, and apply the face swap across all frames in the video.
+---
 
-**InsightFace Integration:** Uses InsightFace's deep learning models to detect and swap faces with high precision.
+## Features
 
-**Streamlit Interface:** User-friendly web interface for easy interaction.
+- **Image Face Swap**: Effortlessly swap faces between a source and target image.
+- **Video Face Swap**: Apply face swapping across all frames of a target video using a source face image.
+- **High Precision**: Built on **InsightFace** deep learning models for accurate face detection and swapping.
+- **User-Friendly Interface**: Interact with the app through a sleek and intuitive **Streamlit** interface.
 
-**How It Works:**
-Image Swapping: Detects faces in both source and target images, then replaces the target face with the source face using inswapper_128.onnx.
-Video Swapping: Swaps the face in each frame of the video by detecting faces in the target video and applying the face swap to match the source face.
+---
 
-**Installation:**
-1. Clone the repository:
-git clone https://github.com/adikhanofficial/face_swapping.git
+## How It Works
 
-2. Install dependencies:
-pip install -r requirements.txt
+1. **Image Face Swapping**:
+   - Detects faces in both the source and target images.
+   - Replaces the target face with the source face using the `inswapper_128.onnx` model.
+   
+2. **Video Face Swapping**:
+   - Processes each frame of the video to detect and swap faces to match the source face.
 
-3. Run the app:
-streamlit run app.py OR Just Run run.py
+---
 
-**Requirements:**
-Python 3.9
-Streamlit
-OpenCV
-InsightFace
+## Installation
 
-**Download Links**
+Follow these steps to get started:
 
-Python 3.9: https://www.python.org/downloads/release/python-390/ <br>
-InSwapper Model: https://cdn.adikhanofficial.com/python/insightface/models/inswapper_128.onnx
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/AdiKhanOfficial/face-swap-app.git
+   cd face-swap-app
+   ```
 
-**Usage:**
-Open the app, upload your source and target images or videos, and let the magic happen! Swapped images and videos can be downloaded directly from the app once processing is complete.
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-**Results**
+3. **Run the app**:
+   - For the Streamlit interface:
+     ```bash
+     streamlit run app.py
+     ```
+   - Or, simply run:
+     ```bash
+     python run.py
+     ```
+
+---
+
+## Requirements
+
+- **Python 3.9**  
+- **Streamlit**  
+- **OpenCV**  
+- **InsightFace**
+
+**Download Links**:
+- [Python 3.9](https://www.python.org/downloads/release/python-390/)
+- [InSwapper Model (`inswapper_128.onnx`)](https://cdn.adikhanofficial.com/python/insightface/models/inswapper_128.onnx)
+
+---
+
+## Usage
+
+1. Open the application using Streamlit or `run.py`.
+2. Upload your **source face image** and the **target image/video**.
+3. Click the process button and let the magic happen!
+4. Once processing is complete, download the swapped images or videos directly from the app.
+
+---
+
+## Results
 <img src='https://raw.githubusercontent.com/AdiKhanOfficial/face_swapping/refs/heads/main/Results/Result.jpg' style='width:100%'/>
+
+---
+
+## Contributing
+
+Contributions are welcome! If you’d like to improve the app or add new features, feel free to fork the repository, make your changes, and submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## About
+
+Developed by **Adil Khan**.  
+For more projects and updates, visit my [GitHub Profile](https://github.com/AdiKhanOfficial) or follow me on social media.
+
+---
+
+Feel free to reach out with any questions or feedback! 😊
+
