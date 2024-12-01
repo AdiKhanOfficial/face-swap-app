@@ -141,5 +141,5 @@ if __name__ == "__main__":
     app = FaceAnalysis(name='buffalo_l')
     app.prepare(ctx_id=0, det_size=(640, 640))
     download_model() #download model if not available
-    swapper = insightface.model_zoo.get_model('inswapper_128.onnx', root=os.path.join(os.path.dirname(__file__), "models"))
+    swapper = insightface.model_zoo.get_model('inswapper_128.onnx', root=os.path.dirname(__file__))
     main()
